@@ -1,0 +1,27 @@
+@import "./variables.scss";
+@import "./reset.scss";
+html {
+    // overflow: hidden;
+}
+
+html,
+body {
+    font-size: $font-size;
+    color: $text-color;
+    font-family: $font-family-base;
+    &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #ddd;
+    }
+}
+
+//container
+.wrap-container {}
+
+.container {}
