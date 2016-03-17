@@ -2,16 +2,17 @@ h2 {
     //font-weight: normal;
 }
 
+h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
 .menu-content {
     margin-top: 5vh;
     margin-bottom: 15vh;
-    h3 {
-        margin-bottom: 15px;
-        font-weight: bold;
-        opacity: 0.5;
-        font-size: 14px;
-        letter-spacing: 1px;
-    }
     ul {
         list-style: decimal;
         font-size: 20px;
@@ -31,8 +32,18 @@ h2 {
         font-weight: normal;
         margin-bottom: 10px;
     }
+    h3 {
+        margin-top: 5vh;
+        padding-left: 0;
+        //margin-bottom: -2vh;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+    }
     .phase {
-        margin-bottom: 8vh;
+        margin-bottom: 10vh;
+        >h2 {
+            color: #0062FF;
+        }
         li {
             font-weight: 100;
             span {
@@ -45,6 +56,8 @@ h2 {
                 column-gap: 1em;
                 margin-top: 4vh;
                 margin-left: 0px;
+                background: #FBFBFB;
+                padding: 40px;
                 li {
                     display: inline-block;
                     margin: 0 0 1em;
@@ -62,8 +75,51 @@ h2 {
                 font-style: italic;
                 font-size: 18px;
                 span {
-                	font-weight: bold;
-                	border-bottom: 1px dotted;
+                    font-weight: bold;
+                    border-bottom: 1px dotted;
+                }
+            }
+        }
+        &.phase-three {
+            dl {
+                margin-top: 4vh;
+                padding-left: 1vw;
+            }
+            dt,
+            dd {
+                //font-style: italic;
+                font-size: 18px;
+                span {
+                    //font-weight: bold;
+                    //border-bottom: 1px dotted;
+                }
+            }
+            dt {
+                h2 {}
+            }
+            dd {
+                line-height: 1.5em;
+                margin-bottom: 2vh;
+                font-style: italic;
+                padding-left: 20px;
+            }
+        }
+        &.phase-four {
+            ul {
+                li {
+                    font-size: 18px;
+                    padding-left: 0vw;
+                    padding:10px 0;
+                    a {
+                         color: #4A4D50;
+                        opacity: 0.6;
+                        border-bottom: 1px dotted;
+
+                        &:hover {
+                        	  color: #0062FF;
+                        	opacity:1;
+                        }
+                    }
                 }
             }
         }
