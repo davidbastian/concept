@@ -4,6 +4,10 @@ html {
     // overflow: hidden;
 }
 
+::selection {
+    color: white; 
+    background: $brand-color;
+}
 html,
 body {
     font-size: $font-size;
@@ -19,9 +23,42 @@ body {
     &::-webkit-scrollbar-thumb {
         background-color: #ddd;
     }
+
+    
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.6em;
+    width: 100%;
+    max-width: 720px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 100;
+    line-height: 1.6em;
+}
+
+a {
+    color:$brand-color;
 }
 
 //container
 .wrap-container {}
 
-.container {}
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 15vh;
+}

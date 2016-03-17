@@ -11,7 +11,7 @@ function SingleController($scope, $http, $routeParams) {
 
     // $scope.home = data;
     // Simple GET request example:
-    $http({
+    /*$http({
         method: 'GET',
         url: 'wp-json/posts'
     }).then(function successCallback(response) {
@@ -20,7 +20,7 @@ function SingleController($scope, $http, $routeParams) {
     }, function errorCallback(response) {
         // called asynchronously if an error occurs
         // or server returns response with an error status.
-    });
+    });*/
 
 }
 export {
