@@ -5,9 +5,10 @@ html {
 }
 
 ::selection {
-    color: white; 
+    color: white;
     background: $brand-color;
 }
+
 html,
 body {
     font-size: $font-size;
@@ -22,14 +23,10 @@ body {
     }
     &::-webkit-scrollbar-thumb {
         background-color: #ccc;
-
         &:hover {
             // background-color: $brand-color;
-
         }
     }
-
-    
 }
 
 h1 {
@@ -49,9 +46,7 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 {
-
-}
+h4 {}
 
 p {
     font-weight: 100;
@@ -59,7 +54,7 @@ p {
 }
 
 a {
-    color:$brand-color;
+    color: $brand-color;
 }
 
 //container

@@ -42,7 +42,7 @@ h3 {
     .phase {
         margin-bottom: 10vh;
         >h2 {
-            color: #0062FF;
+            color: #5282F0;
         }
         li {
             font-weight: 100;
@@ -82,8 +82,8 @@ h3 {
         }
         &.phase-three {
             dl {
-                margin-top: 4vh;
-                padding-left: 1vw;
+              //  margin-top: 4vh;
+                //  padding-left: 1vw;
             }
             dt,
             dd {
@@ -95,7 +95,10 @@ h3 {
                 }
             }
             dt {
-                h2 {}
+                h2 {
+                    font-size: 20px;
+                    font-weight: 100;
+                }
             }
             dd {
                 line-height: 1.5em;
@@ -109,15 +112,14 @@ h3 {
                 li {
                     font-size: 18px;
                     padding-left: 0vw;
-                    padding:10px 0;
+                    padding: 10px 0;
                     a {
-                         color: #4A4D50;
+                        color: #4A4D50;
                         opacity: 0.6;
                         border-bottom: 1px dotted;
-
                         &:hover {
-                        	  color: #0062FF;
-                        	opacity:1;
+                            color: #5282F0;
+                            opacity: 1;
                         }
                     }
                 }
