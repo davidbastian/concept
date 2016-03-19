@@ -137,10 +137,13 @@ h3 {
                 width: 100vw;
                 height: 100vh;
                 overflow: hidden;
+                border-top: 1px solid#4a90e2;
+                margin: 5vh 0;
+                border-bottom: 1px solid#4a90e2;
                 img {
                     display: block;
-                    width:150vw;
-                   height: auto;
+                    width: 150vw;
+                    height: auto;
                 }
             }
         }

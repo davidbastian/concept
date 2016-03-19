@@ -23,6 +23,8 @@ function HomeController($scope, $http, $routeParams) {
         // or server returns response with an error status.
     });*/
 
+   Draggable.create($('.wireframe-container img'), {type:"x,y", edgeResistance:0.65, bounds:".wireframe-container", throwProps:true});
+
 }
 export {
     HomeController
