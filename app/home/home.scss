@@ -10,6 +10,10 @@ h3 {
     letter-spacing: 1px;
 }
 
+.index {
+    padding-top: 25vh;
+}
+
 .menu-content {
     margin-top: 5vh;
     margin-bottom: 15vh;
@@ -42,7 +46,7 @@ h3 {
     .phase {
         margin-bottom: 10vh;
         >h2 {
-            color: #5282F0;
+            color: #4A90E2;
         }
         li {
             font-weight: 100;
@@ -82,7 +86,7 @@ h3 {
         }
         &.phase-three {
             dl {
-              //  margin-top: 4vh;
+                //  margin-top: 4vh;
                 //  padding-left: 1vw;
             }
             dt,
@@ -106,6 +110,9 @@ h3 {
                 font-style: italic;
                 padding-left: 20px;
             }
+            .selection {
+                margin-bottom: 5vh;
+            }
         }
         &.phase-four {
             ul {
@@ -118,10 +125,22 @@ h3 {
                         opacity: 0.6;
                         border-bottom: 1px dotted;
                         &:hover {
-                            color: #5282F0;
+                            color: #4A90E2;
                             opacity: 1;
                         }
                     }
+                }
+            }
+        }
+        &.phase-six {
+            .wireframe-container {
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width:150vw;
+                   height: auto;
                 }
             }
         }

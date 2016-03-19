@@ -2,6 +2,9 @@ function HomeController($scope, $http, $routeParams) {
 
     $scope.message = 'This is Home'
     $scope.slug = $routeParams.slug
+
+    $scope.wireframe = require('./wireframe.png');
+
     //console.log($routeParams.slug)
     // $scope.home = data;
     // Simple GET request example:
