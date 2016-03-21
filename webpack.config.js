@@ -2,9 +2,6 @@ var webpack = require('webpack')
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var path = require('path');
 
-var themeUrl = 'themes/prg/webapp/';
-var fontUrl = themeUrl + 'app/fonts';
-
 var config = {
     context: __dirname + '/app',
     entry: [
@@ -56,9 +53,13 @@ var config = {
                 test: /\.css$/,
                 loader: "style-loader!css-loader?importLoaders=1"
             }, {
-                test: /\.(woff|woff2|eot|ttf|svg)$/,
                 include: path.resolve(__dirname, "app/fonts"),
-                loader: 'url-loader?limit=1024&name=' + fontUrl + '/[name].[ext]?[hash]'
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "url-loader?limit=10000&minetype=application/font-woff"
+            }, {
+                include: path.resolve(__dirname, "app/fonts"),
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: "file-loader"
             }, {
                 test: /\.(jpe?g|png|gif)$/i,
                 loaders: [
@@ -82,9 +83,7 @@ config.plugins.push(new webpack.HotModuleReplacementPlugin())
 console.log(config.module.loaders[4].loader)
 
 if (process.env.NODE_ENV === 'production') {
-
     config.output.path = __dirname + '/dist';
-
     config.plugins.push(new webpack.optimize.UglifyJsPlugin({
         output: {
             comments: false
