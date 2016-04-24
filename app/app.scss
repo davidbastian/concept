@@ -39,7 +39,7 @@ strong {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 100;
     line-height: 1.6em;
     width: 100%;
@@ -50,7 +50,9 @@ h3 {
     text-transform: uppercase;
 }
 
-h4 {}
+h4 {
+    
+}
 
 p {
     font-weight: 100;
@@ -68,7 +70,7 @@ a {
 
 .container {
     width: 90%;
-    max-width: 960px;
+    max-width: 768px;
     margin: 0 auto;
     
 }

@@ -10,6 +10,18 @@ h3 {
     letter-spacing: 1px;
 }
 
+.phases {
+    a {
+        color: #4A4D50;
+        opacity: 0.6;
+        border-bottom: 1px dotted;
+        &:hover {
+            color: #4A90E2;
+            opacity: 1;
+        }
+    }
+}
+
 .index {
     padding-top: 25vh;
 }
@@ -19,7 +31,7 @@ h3 {
     margin-bottom: 15vh;
     ul {
         list-style: decimal;
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 20px;
         li {
             margin-bottom: 15px;
@@ -44,8 +56,9 @@ h3 {
         padding-bottom: 15px;
     }
     .phase {
-        margin-bottom: 10vh;
-        img {
+        margin-bottom: 0vh;
+        img,
+        video {
             width: 100%;
             display: block;
             margin-top: 20px;
@@ -98,6 +111,7 @@ h3 {
             dd {
                 //font-style: italic;
                 font-size: 18px;
+                font-weight: 100;
                 span {
                     //font-weight: bold;
                     //border-bottom: 1px dotted;
@@ -105,8 +119,11 @@ h3 {
             }
             dt {
                 h2 {
-                    font-size: 20px;
-                    font-weight: 100;
+                    font-size: 18px;
+                    font-weight: bold;
+                    span {
+                        font-weight: 100;
+                    }
                 }
             }
             dd {
@@ -125,15 +142,6 @@ h3 {
                     font-size: 18px;
                     padding-left: 0vw;
                     padding: 10px 0;
-                    a {
-                        color: #4A4D50;
-                        opacity: 0.6;
-                        border-bottom: 1px dotted;
-                        &:hover {
-                            color: #4A90E2;
-                            opacity: 1;
-                        }
-                    }
                 }
             }
         }
@@ -143,17 +151,16 @@ h3 {
             }
             .wireframe-container {
                 width: 100vw;
-                height: 90vh;
+                height: 100vh;
                 overflow: hidden;
                 background: #f1f1f1;
                 // border-top: 1px solid#4a90e2;
-                margin: 5vh 0;
-                cursor:-webkit-grab!important;
-
+                margin: 0vh 0;
+                cursor: -webkit-grab!important;
                 // border-bottom: 1px solid#4a90e2;
                 img {
                     display: block;
-                     cursor:-webkit-grab!important;
+                    cursor: -webkit-grab!important;
                     width: 150vw;
                     height: auto;
                 }
@@ -162,35 +169,57 @@ h3 {
                 list-style: decimal;
                 margin-left: 15px;
                 li {
-                   // font-size: 18px;
+                    // font-size: 18px;
                     padding-left: 0vw;
                     padding: 30px 0;
                     line-height: 1.6em;
                     &:first-child {
-                    	padding-top: 0px;
+                        padding-top: 0px;
                     }
                 }
             }
         }
-
         &.phase-seven {
             ul {
                 list-style: decimal;
                 margin-left: 15px;
-
                 li {
-                   // font-size: 18px;
+                    // font-size: 18px;
                     padding-left: 0vw;
                     padding: 30px 0;
                     line-height: 1.6em;
                     &:first-child {
-                    	padding-top: 0px;
+                        padding-top: 0px;
                     }
-
                     small {
-                    	font-size: 14px;
-                    	opacity: 0.5;
-                    	margin-top: 20px;
+                        font-size: 14px;
+                        opacity: 0.5;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        &.phase-eight {
+            ul {
+                list-style: decimal;
+                margin-left: 15px;
+                li {
+                    // font-size: 18px;
+                    padding-left: 0vw;
+                    padding: 30px 0;
+                    line-height: 1.6em;
+                    padding-bottom: 0px;
+                    i {
+                        font-style: italic;
+                        font-weight: 100;
+                    }
+                    &:first-child {
+                        //  padding-top: 0px;
+                    }
+                    small {
+                        font-size: 14px;
+                        opacity: 0.5;
+                        margin-top: 20px;
                     }
                 }
             }

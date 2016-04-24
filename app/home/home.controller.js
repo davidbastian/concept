@@ -15,6 +15,7 @@ function HomeController($scope, $http, $routeParams) {
     $scope.w8 = require('./IMG_4003.JPG');
     $scope.w9 = require('./IMG_4004.JPG');
     $scope.w10 = require('./color.jpg');
+    $scope.w11 = require('./out.mp4');
 
     //console.log($routeParams.slug)
     // $scope.home = data;
